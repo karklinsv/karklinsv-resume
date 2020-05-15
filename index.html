@@ -26,6 +26,7 @@
         dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
+        .footer { clear: both; position: relative; height: 50px; margin-top: -200px; background-color: #999; color: white; text-align: center; }
      </style>
 </head>
 
@@ -52,7 +53,7 @@
                 I have quite a big expierience in IT, starting already in 2005 as IT specialist,
                 and gaining new skills and knowledge over the years. 
                 My strenghts are ability to learn new skills easily and ability to find solutions to problems.
-                I'm comfortable to work with distributed teams, and remote working.
+                I'm feeling comfortable working with distributed teams, and also remote working.
             </p>
         </div>
         
@@ -167,7 +168,17 @@
         <div class="clear"></div>
     
     </div>
-
+    
+    <div class="footer"><p id="modified"> </p>
+</div>
+<!-- <script>
+    var lastModified = document.lastModified;
+    document.getElementById("modified").innerHTML = "CV last updated on: " + lastModified;
+</script> -->
+<script>
+    var x = new Date(document.lastModified);
+    document.getElementById("modified").innerHTML = "CV last updated on: " + x;
+</script>
 </body>
 
 </html>
