@@ -157,14 +157,16 @@
             
             <dd class="clear"></dd>
         </dl>
-        
+
         <div class="clear"></div>
     
     </div>
-    
-    <div class="footer"><p id="modified"> </p>
-</div>
-
+   
+    <div class="footer">
+        <p id="modified"> </p>
+        <p id="visits"> </p>
+    </div>
+<script src=”getvisits.js”></script>
 <script>
     var x = new Date(document.lastModified);
     document.getElementById("modified").innerHTML = "CV last updated on: " + x;
